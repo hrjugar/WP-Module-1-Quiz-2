@@ -9,29 +9,33 @@
     padding: 0;
 }
 
-html {
-    background-color: var(--primary-color);
-}
-
 h1, 
-h3,
-h5,
 p, 
 a {
     text-decoration: none;
-    color: whitesmoke;
 }
 
-h1,
-h3,
+h1, 
 a {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 
-h5,
 p {
     font-family: "Oxygen", sans-serif;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+    text-align-last: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* header */
@@ -42,6 +46,12 @@ header {
     align-items: center;
     padding: 30px 10%;
     background-color: var(--primary-color);
+}
+
+header h1, 
+header p, 
+header a {
+    color: whitesmoke;
 }
 
 header nav {
@@ -63,29 +73,32 @@ header nav li a:hover {
     color: var(--secondary-color);
 }
 
+/* sections */
+
+.section {
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+}
+
 /* home */
 
 .home-section {
-    margin: 0 auto;
-    margin-top: 2em;
-    text-align: center;
+    background-color: var(--primary-color);
 }
 
-.home-section img {
-    border-radius: 50%;
-    width: 300px;
-    display: inline-block;
-    margin: auto;
-    overflow: hidden;
-}
-
-.home-section h1 {
-    text-align: center;
-}
-
+.home-section h1, 
 .home-section p {
-    margin-left: 25vw;
-    margin-right: 25vw;
-    text-align: justify;
-    text-align-last: center;
+    color: whitesmoke;
+}
+
+/* goals */
+
+.goals-section {
+    background-color: whitesmoke;
+}
+
+.goals-section h1, 
+.goals-section p {
+    color: var(--primary-color);
 }
