@@ -18,10 +18,23 @@ h3,
 h5,
 p, 
 a {
-    font-family: "Oswald", sans-serif;
     text-decoration: none;
     color: whitesmoke;
 }
+
+h1,
+h3,
+a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+
+h5,
+p {
+    font-family: "Oxygen", sans-serif;
+}
+
+/* header */
 
 header {
     display: flex;
@@ -43,8 +56,36 @@ header nav li {
 header nav li a {
     transition: all 0.2s ease 0s;
     font-size: 16px;
+    font-weight: 300;
 }
 
 header nav li a:hover {
     color: var(--secondary-color);
+}
+
+/* home */
+
+.home-section {
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.home-section img {
+    border-radius: 50%;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.home-section h1 {
+    text-align: center;
+}
+
+.home-section p {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+    text-align-last: center;
 }
