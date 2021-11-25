@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #342a69;
+    --secondary-color: #ef2e72;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+h1, 
+h3,
+h5,
+p, 
+a {
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--primary-color);
+}
+
+header nav {
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header nav li a {
+    transition: all 0.2s ease 0s;
+    font-size: 16px;
+}
+
+header nav li a:hover {
+    color: var(--secondary-color);
+}
